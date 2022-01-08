@@ -1,0 +1,40 @@
+*{
+    background-color: #353535;
+}
+section{
+    margin: 50px 250px;
+}
+.image-container{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minman(240px 1fr));
+    grid-auto-rows: 240px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #353535;
+    /* font-size: 3rem;
+    color: #fff; */
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    transition: all 50ms;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+}
+@media screen and (min-width:600px) {
+    .card-tall{
+        grid-row: span 2/auto;
+    }
+    .card-wide{
+        grid-column: span 2/auto;
+    }
+    
+}
